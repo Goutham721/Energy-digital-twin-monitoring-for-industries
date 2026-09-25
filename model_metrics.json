@@ -1,0 +1,59 @@
+{
+  "best_model": "GradientBoosting",
+  "features": [
+    "load_percentage",
+    "production_rate",
+    "temperature",
+    "pressure",
+    "vibration",
+    "efficiency",
+    "operating_hours",
+    "ambient_temperature",
+    "hour",
+    "day_of_week",
+    "is_weekend",
+    "machine_type",
+    "machine_status",
+    "maintenance_status"
+  ],
+  "target": "energy_consumption_kwh",
+  "results": {
+    "LinearRegression": {
+      "validation": {
+        "MAE": 2.7558,
+        "MSE": 11.2422,
+        "RMSE": 3.3529,
+        "R2": 0.8271,
+        "MAPE": 14.3732
+      },
+      "train_seconds": 0.18
+    },
+    "RandomForest": {
+      "validation": {
+        "MAE": 0.2541,
+        "MSE": 0.2564,
+        "RMSE": 0.5064,
+        "R2": 0.9961,
+        "MAPE": 2.286
+      },
+      "train_seconds": 54.93
+    },
+    "GradientBoosting": {
+      "validation": {
+        "MAE": 0.2479,
+        "MSE": 0.1517,
+        "RMSE": 0.3895,
+        "R2": 0.9977,
+        "MAPE": 2.3306
+      },
+      "train_seconds": 27.9,
+      "test": {
+        "MAE": 0.2633,
+        "MSE": 0.2078,
+        "RMSE": 0.4559,
+        "R2": 0.9967,
+        "MAPE": 2.753
+      }
+    }
+  }
+}

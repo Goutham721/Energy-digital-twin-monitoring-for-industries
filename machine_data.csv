@@ -1,0 +1,11 @@
+machine_id,machine_type,rated_kw,base_efficiency
+Motor_1,Motor,55,0.92
+Motor_2,Motor,45,0.9
+Conveyor_1,Conveyor,18,0.88
+Compressor_1,Compressor,75,0.85
+Pump_1,Pump,30,0.87
+HVAC_1,HVAC,60,0.8
+Boiler_1,Boiler,90,0.83
+Cooling_System_1,Cooling,40,0.86
+Production_Line_1,ProductionLine,100,0.89
+Lighting_1,Lighting,12,0.95
